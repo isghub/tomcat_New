@@ -44,6 +44,7 @@ RUN groupadd -r tomcat && \
 
 WORKDIR /opt/tomcat
 
+COPY context.xml /opt/tomcat/webapps/manager/META-INF/context.xml
 EXPOSE 8080
 
 USER tomcat
